@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Learn what a `Stack` is
-- Identify common methods for a `Stack`
-- Identify common use cases for a `Stack`
+- Define a `Stack` data structure.
+- Identify common methods for a `Stack`.
+- Identify common use cases for a `Stack`.
 
 ***
 
@@ -12,7 +12,8 @@
 
 - **Sequence**: a data structure in which data is stored and accessed in a
 specific order.
-- **Stack** is a linear data structure that follows the principle of Last In First Out (LIFO)
+- **Stack** is a linear data structure that follows the principle of Last In
+First Out (LIFO)
 - **Index**: the location, represented by an integer, of an element in a
 sequence.
 - **Iterable**: able to be broken down into smaller parts of equal size that
@@ -102,10 +103,10 @@ to indicate the maximum size of the `Stack`.
 Some other common methods you might see implemented include:
 
 - `empty`/`full`: return true if the `Stack` is empty/full; false
-  otherwise
+  otherwise.
 - `search(target)`: return the distance between the top of the stack and the
-  target element if it's present; -1 otherwise
-- `size`: return the number of elements contained in the `Stack`
+  target element if it's present; -1 otherwise.
+- `size`: return the number of elements contained in the `Stack`.
 
 Other methods are possible as well, of course: the methods the developer chooses
 to define in a given implementation of a `Stack` will depend on their particular
