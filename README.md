@@ -65,10 +65,10 @@ of the `Stack`:
 
 ### Stack vs. list
 
-You may be wondering why we wouldn't just use an list instead of implementing a
+You may be wondering why we wouldn't just use a list instead of implementing a
 `Stack`. After all, lists are also used to store a list of data, and also allow
 you to add and remove values. In fact, one way to implement a `Stack` (although
-not generally the best way) is by using an list as the underlying data structure
+not generally the best way) is by using a list as the underlying data structure
 — you'll be doing that in the next lesson.
 
 `Stack`s have several benefits for certain problems when compared to lists.
@@ -235,12 +235,11 @@ def evaluate_keystrokes(string):
     return result
 ```
 
-With this code, every time we encounter the `<`, we "erase" the previous
-character by `pop`ping it off the stack if the stack if not empty. We need to
-check for an empty stack to handle the special case of `<` being the first
-character in the string. By the end, all the characters that don't get "erased"
-remain in the `stack`, so we simply `pop` them off and add them to the `result`
-string.
+Every time we encounter the `<`, we "erase" the previous character by `pop`ping
+it off the stack, but only if the stack is not empty. We need to check for an
+empty stack to handle the special case of `<` being the first character in the
+string. By the end, all the characters that don't get "erased" remain in the
+`stack`, so we simply `pop` them off and add them to the `result` string.
 
 This problem is one that lends itself pretty naturally to using a `Stack`,
 resulting in code that is simpler and easier to read.
